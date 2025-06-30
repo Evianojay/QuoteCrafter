@@ -1,0 +1,98 @@
+    :root {
+      --bg-color: #f9fbfd;
+      --text-color: #1e1e1e;
+      --box-bg: #ffffff;
+      --accent: #00796b;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --box-bg: #1f1f1f;
+      --accent: #64ffda;
+      --shadow: rgba(255, 255, 255, 0.1);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      color: var(--accent);
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    .quote-box {
+      background: var(--box-bg);
+      border-left: 6px solid var(--accent);
+      padding: 25px;
+      margin: 30px auto;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+    .quote-box blockquote {
+      font-style: italic;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+    .quote-box p {
+      margin: 0;
+      font-weight: bold;
+      color: var(--accent);
+    }
+    button, select, input[type="text"] {
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 18px;
+      margin: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    button:hover, select:hover {
+      background-color: #004d40;
+      transform: scale(1.03);
+    }
+    input[type="text"] {
+      width: 250px;
+      background: var(--box-bg);
+      color: var(--text-color);
+      border: 1px solid #ccc;
+    }
+    #notification {
+      margin-top: 20px;
+      padding: 12px;
+      border-radius: 6px;
+      background-color: #e0f7fa;
+      color: var(--accent);
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      font-weight: 600;
+    }
+    .form {
+      margin-top: 25px;
+    }
+    label {
+      font-weight: 600;
+      color: var(--accent);
+      display: block;
+      margin: 20px 0 5px;
+    }
+    .select-wrapper select {
+      width: 270px;
+      appearance: none;
+      background: var(--box-bg);
+      color: var(--text-color);
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
